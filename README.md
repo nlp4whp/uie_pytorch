@@ -1,5 +1,7 @@
 # 通用信息抽取 UIE(Universal Information Extraction) PyTorch版
 
+- [UIE wrapper document](./wrapper.dev.md)
+
 **迁移[PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP)中的UIE模型到PyTorch上**
 
 * 2022-10-3: 新增对UIE-M系列模型的支持，增加了ErnieM的Tokenizer。ErnieMTokenizer使用C++实现的高性能分词算子FasterTokenizer进行文本预处理加速。需要通过`pip install faster_tokenizer`安装FasterTokenizer库后方可使用。

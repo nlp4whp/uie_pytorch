@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "uie-wrapper"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+rich = "^13.0.0"
+six = "^1.16.0"
+colorlog = "^6.7.0"
+colorama = "^0.4.6"
+tqdm = "^4.64.1"
+jupyterlab = "^3.5.2"
+jupyter-resource-usage = "^0.6.4"
+jupyterlab-code-formatter = "^1.5.3"
+ipywidgets = "^8.0.4"
+isort = "^5.11.4"
+black = "^22.12.0"
+numpy = "^1.24.1"
+onnx = "^1.13.0"
+onnxruntime-gpu = "^1.13.1"
+onnxconverter-common = "^1.13.0"
+transformers = "^4.25.1"
+torch = "^1.13.1"
+sentencepiece = "^0.1.97"
+faster-tokenizer = "^0.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# 自定义pip源
+[[tool.poetry.source]]
+name = "pypi-1st"
+url = "https://xxx/simple/"
+default = true
+
+[[tool.poetry.source]]
+name = "pypi-2nd"
+url = "https://pypiserver.xxx/simple/"
+secondary = true
